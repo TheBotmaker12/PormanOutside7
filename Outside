@@ -3,3 +3,14 @@ local Window = Library.CreateLib("Criminal X| Outside", "GrapeTheme")
 
 local Tab = Window:NewTab("Admins")
 local Section = Tab:NewSection("Get Your admin here!")
+
+local Tab = Window:NewTab("Our Discord")
+local Section = Tab:NewSection("Join our discord")
+
+Section:NewButton("Join  Discord", "Lol", function()
+    print("Clicked")
+
+setclipboard("https://discord.gg/criminalx")
+print("Copied")
+    
+end)
