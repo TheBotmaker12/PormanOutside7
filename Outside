@@ -7,13 +7,11 @@ local Section = Tab:NewSection("Get Your admin here!")
 local Tab = Window:NewTab("Our Discord")
 local Section = Tab:NewSection("Join our discord")
 
-Section:NewButton("Join  Discord", "Lol", function()
-    print("Clicked")
+    Section:NewKeybind("Discord", "The Discord", Enum.KeyCode.F, function()
+        print("You just clicked the bind")
+        setclipbord("https://discord.gg/criminalx")
+    end)
 
-setclipboard("https://discord.gg/criminalx")
-print("Copied")
-    
-end)
 
 local Tab = Window:NewTab("Admin Cmds")
 local Section = Tab:NewSection("Walkspeed")
@@ -32,3 +30,5 @@ local Section = Tab:NewSection("testing")
 Section:NewDropdown("xd", "xd", {"xd 1", "Optxdion 2", "xd 3"}, function(currentOption)
     print(currentOption)
 end)
+
+
